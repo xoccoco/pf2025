@@ -34,3 +34,29 @@
     src: url(../font/Roboto-Bold.woff);
 
 }
+
+@font-face {
+    font-family: "poppins L";
+    src: url(../font/Poppins-Thin.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "poppins r";
+    src: url(../font/Poppins-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "poppins m";
+    src: url(../font/Poppins-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "poppins b";
+    src: url(../font/Poppins-SemiBold.woff);
+    font-weight: 600;
+
+}
+
