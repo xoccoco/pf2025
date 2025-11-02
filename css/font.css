@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "funnel r";
+    src: url(../font/FunnelSans-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "funnel b" ;
+    src: url(../font/FunnelSans-Medium.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "roboto l";
+    src: url(../font/Roboto-Light.woff);
+    font-weight: 200;
+}
+
+
+@font-face {
+    font-family: "roboto r";
+    src: url(../font/Roboto-Regular-webfont.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "roboto m";
+    src: url(../font/Roboto-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "roboto b";
+    src: url(../font/Roboto-Bold.woff);
+
+}

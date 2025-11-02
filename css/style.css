@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primario: #000;
+    --tipo-primaria: "funnel r";
+}
+
+body {
+    font-family: "funnel r";
+}
+
+
+
+header {
+    padding:  20Px 5%;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height:150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.title{
+    margin-left: 20px;
+}
+
+
+.title img{
+
+    width: 200px;
+    border: none;
+    
+
+}
+
+.title img:hover{
+
+
+    filter: none;
+    
+
+}
+
+
+h1 {
+    font-family: "roboto b";
+    font-size: 2rem;
+
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0px;
+
+
+}
+
+h2 {
+    font-family: "funnel r";
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    font-family: "roboto b";
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+    margin: 20px 0; 
+}
+
+h4{
+    font-family: "roboto l";
+    font-size: 22px;
+    color: #000;
+}
+
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+}
+
+
+.menu img {
+    width: 36px;
+    height: 36px;
+}
+
+ /*hamburguesa*/
+
+ .ham_menu{
+    display: block;
+
+    position: relative;
+    padding: 20px;
+    z-index: 200;
+  }
+  
+  .hamburger {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 300;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .hamburger__line {
+    position: absolute;
+    left: 11px;
+    width: 26px;
+    height: 3px;
+    background-color: #333;
+    transition: all .4s;
+  }
+  
+  .hamburger__line:nth-of-type(1) {
+    top: 14px;
+  }
+  .hamburger__line:nth-of-type(2) {
+    top: 23px;
+  }
+  .hamburger__line:nth-of-type(3) {
+    top: 32px;
+  }
+  
+  /* open menu hamburguesa */
+  .hamburger.active .hamburger__line:nth-of-type(1) {
+    transform: translateY(9px) rotate(-45deg);
+  }
+  .hamburger.active .hamburger__line:nth-of-type(2) {
+    opacity: 0;
+  }
+  .hamburger.active .hamburger__line:nth-of-type(3) {
+    transform: translateY(-9px) rotate(45deg);
+  }
+  
+  .nav {
+    position: fixed;
+    top: 150px;              /* header下から出る */
+    left: 0;
+    width: 100%;             /* 横幅いっぱい */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    transform: translateY(-100%);   /* ← 初期状態：完全に上に隠す */
+    transition: transform .4s ease;
+    z-index: 100;
+    height: 0;               /* ← 高さを0にして非表示状態に */
+    overflow: hidden;        /* ← 中身を隠す */
+  }
+  
+  .nav.active {
+    transform: translateY(0);
+    height: auto;            /* ← 開いたときに中身を見せる */
+    overflow: visible;
+  }
+  .nav__list {
+    margin: 0;
+    padding: 40px 20px;
+    list-style: none;
+    display: grid;                      /* ← グリッドレイアウトに変更 */
+    grid-template-columns: repeat(2, 1fr); /* ← 2列構成 */
+    gap: 10px 20px;                     /* ← 行間・列間 */
+    text-align: center;
+    border-top: #eee solid 1px;
+  }
+  
+  .nav__item {
+    padding: 0;
+  }
+  
+  .nav__link {
+    display: block;
+    padding: 20px 0;
+    color: #333;
+    text-decoration: none;
+    font-family: "roboto b";
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .nav__link:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+  }
+
+/*fin hamburguesa*/
+
+
+
+
+#gallary {
+
+    width: 100%;
+    padding: 5%;
+    grid: "gallary" 1fr;
+    display: flex;
+    justify-content: center;
+    border:solid 1px #ddd;
+
+
+}
+
+
+.layout_gallary {
+
+    grid-area: gallary;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem;
+}
+
+
+
+div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border:solid 1px #ddd;
+    border-radius: 10px;
+}
+
+div img:hover {
+ 
+    filter: brightness(70%);
+    transition: 400ms;
+    
+}
+
+
+#service{
+    margin-top:30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  
+}
+
+.layout_service {
+    width: 87%;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+
+    place-items: center;
+    align-items: start;
+}
+
+
+.contents_service{
+    width: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: #ddd 1px solid;
+    border-radius: 10px;
+}
+
+.contents_service img{
+    
+    width: 40px;
+    margin: 20px;
+    border:none;
+
+}
+
+.contents_service p {
+    color: #333;
+}
+
+
+
+
+
+#about {
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 5%;
+
+    background-color: #F4EDE4;
+
+}
+
+.miventaja {
+
+
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+
+}
+
+
+.icons img {
+    width: 36px;
+    height: 36px;
+
+}
+
+
+.skills {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.skills img {
+    width: 36px;
+    height: 36px;
+
+}
+
+.mifoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mifoto img{ 
+    width: 70%;
+    border-radius: 50%;
+ 
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border: solid 1px #000;
+    padding: 2% 5% 0 5%;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 10px;
+    color: #fff;
+}
+
+
+
+
+/* min-width = HASTA 640 para arriba */
+@media (min-width: 640px) {
+
+
+
+
+    .layout_gallary {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+
+
+
+@media (min-width: 768px) {
+
+
+    .layout_gallary {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    #service{
+        margin-top:0 ;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 3% 5%;
+      
+    }
+
+    .layout_service {
+        width: 87%;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+        align-items: start;
+        place-items: center;
+    }
+
+    .contents_service{
+        width: 100%;
+        padding: 30px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+        border: #ddd 1px solid;
+        border-radius: 10px;
+    }
+
+    #about {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    
+        width: 100%;
+    
+        padding: 5%;
+    
+        
+    
+    }
+
+    
+.miventaja {
+
+
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+
+}
+
+
+.icons img {
+    width: 36px;
+    height: 36px;
+
+}
+
+
+.skills {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.skills img {
+    width: 36px;
+    height: 36px;
+
+}
+
+.mifoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mifoto img{ 
+    width: 70%;
+    border-radius: 50%;
+ 
+}
+
+}
+
+@media (min-width: 1200px) {
+
+    #gallary {
+
+        width: 100%;
+        padding: 3% 5%;
+        grid: "gallary" 1fr;
+        display: flex;
+        justify-content: center;
+        border:solid 1px #ddd;
+        background-color: #000;
+        
+    
+    
+    }
+
+    .layout_gallary {
+
+        grid-area: gallary;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+    
+
+    #service{
+        margin-top:0 ;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 3% 5%;
+      
+    }
+
+    .layout_service {
+        width: 87%;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+    
+        align-items: start;
+        place-items: center;
+    }
+
+    .contents_service{
+        width: 100%;
+        padding: 30px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+        border: #ddd 1px solid;
+        border-radius: 10px;
+    }
+
+    #about {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    
+        width: 100%;
+    
+        padding: 5%;
+    
+        
+    
+    }
+
+    
+.miventaja {
+
+
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+
+}
+
+
+.icons img {
+    width: 36px;
+    height: 36px;
+
+}
+
+
+.skills {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.skills img {
+    width: 36px;
+    height: 36px;
+
+}
+
+.mifoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mifoto img{ 
+    width: 70%;
+    border-radius: 50%;
+ 
+}
+    
+
+}
