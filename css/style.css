@@ -16,34 +16,34 @@ body {
 
 
 header {
-    padding:  20Px 5%;
+    padding: 20Px 5%;
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height:150px;
+    height: 150px;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.title{
+.title {
     margin-left: 20px;
 }
 
 
-.title img{
+.title img {
 
     width: 200px;
     border: none;
-    
+
 
 }
 
-.title img:hover{
+.title img:hover {
 
 
     filter: none;
-    
+
 
 }
 
@@ -73,10 +73,10 @@ h3 {
     font-size: 3rem;
     font-weight: 600;
     color: #333;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
-h4{
+h4 {
     font-family: "roboto l";
     font-size: 22px;
     color: #000;
@@ -98,17 +98,17 @@ h4{
     height: 36px;
 }
 
- /*hamburguesa*/
+/*hamburguesa*/
 
- .ham_menu{
+.ham_menu {
     display: block;
 
     position: relative;
     padding: 20px;
     z-index: 200;
-  }
-  
-  .hamburger {
+}
+
+.hamburger {
     position: relative;
     top: 0;
     right: 0;
@@ -119,73 +119,87 @@ h4{
     background: transparent;
     cursor: pointer;
     background-color: #fff;
-  }
-  
-  .hamburger__line {
+}
+
+.hamburger__line {
     position: absolute;
     left: 11px;
     width: 26px;
     height: 3px;
     background-color: #333;
     transition: all .4s;
-  }
-  
-  .hamburger__line:nth-of-type(1) {
+}
+
+.hamburger__line:nth-of-type(1) {
     top: 14px;
-  }
-  .hamburger__line:nth-of-type(2) {
+}
+
+.hamburger__line:nth-of-type(2) {
     top: 23px;
-  }
-  .hamburger__line:nth-of-type(3) {
+}
+
+.hamburger__line:nth-of-type(3) {
     top: 32px;
-  }
-  
-  /* open menu hamburguesa */
-  .hamburger.active .hamburger__line:nth-of-type(1) {
+}
+
+/* open menu hamburguesa */
+.hamburger.active .hamburger__line:nth-of-type(1) {
     transform: translateY(9px) rotate(-45deg);
-  }
-  .hamburger.active .hamburger__line:nth-of-type(2) {
+}
+
+.hamburger.active .hamburger__line:nth-of-type(2) {
     opacity: 0;
-  }
-  .hamburger.active .hamburger__line:nth-of-type(3) {
+}
+
+.hamburger.active .hamburger__line:nth-of-type(3) {
     transform: translateY(-9px) rotate(45deg);
-  }
-  
-  .nav {
+}
+
+.nav {
     position: fixed;
-    top: 150px;              /* header下から出る */
+    top: 150px;
+    /* header下から出る */
     left: 0;
-    width: 100%;             /* 横幅いっぱい */
+    width: 100%;
+    /* 横幅いっぱい */
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,.1);
-    transform: translateY(-100%);   /* ← 初期状態：完全に上に隠す */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+    transform: translateY(-100%);
+    /* ← 初期状態：完全に上に隠す */
     transition: transform .4s ease;
     z-index: 100;
-    height: 0;               /* ← 高さを0にして非表示状態に */
-    overflow: hidden;        /* ← 中身を隠す */
-  }
-  
-  .nav.active {
+    height: 0;
+    /* ← 高さを0にして非表示状態に */
+    overflow: hidden;
+    /* ← 中身を隠す */
+}
+
+.nav.active {
     transform: translateY(0);
-    height: auto;            /* ← 開いたときに中身を見せる */
+    height: auto;
+    /* ← 開いたときに中身を見せる */
     overflow: visible;
-  }
-  .nav__list {
+}
+
+.nav__list {
     margin: 0;
     padding: 40px 20px;
     list-style: none;
-    display: grid;                      /* ← グリッドレイアウトに変更 */
-    grid-template-columns: repeat(2, 1fr); /* ← 2列構成 */
-    gap: 10px 20px;                     /* ← 行間・列間 */
+    display: grid;
+    /* ← グリッドレイアウトに変更 */
+    grid-template-columns: repeat(2, 1fr);
+    /* ← 2列構成 */
+    gap: 10px 20px;
+    /* ← 行間・列間 */
     text-align: center;
     border-top: #eee solid 1px;
-  }
-  
-  .nav__item {
+}
+
+.nav__item {
     padding: 0;
-  }
-  
-  .nav__link {
+}
+
+.nav__link {
     display: block;
     padding: 20px 0;
     color: #333;
@@ -195,12 +209,12 @@ h4{
     border-radius: 8px;
     background-color: #fff;
     transition: all 0.3s ease;
-  }
-  
-  .nav__link:hover {
+}
+
+.nav__link:hover {
     background-color: #f5f5f5;
     transform: translateY(-2px);
-  }
+}
 
 /*fin hamburguesa*/
 
@@ -214,7 +228,7 @@ h4{
     grid: "gallary" 1fr;
     display: flex;
     justify-content: center;
-    border:solid 1px #ddd;
+    border: solid 1px #ddd;
 
 
 }
@@ -237,25 +251,25 @@ div img {
     height: 100%;
     object-fit: cover;
 
-    border:solid 1px #ddd;
+    border: solid 1px #ddd;
     border-radius: 10px;
 }
 
 div img:hover {
- 
+
     filter: brightness(70%);
     transition: 400ms;
-    
+
 }
 
 
-#service{
-    margin-top:30px ;
+#service {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5%;
-  
+
 }
 
 .layout_service {
@@ -271,7 +285,7 @@ div img:hover {
 }
 
 
-.contents_service{
+.contents_service {
     width: 100%;
     padding: 30px;
 
@@ -283,11 +297,11 @@ div img:hover {
     border-radius: 10px;
 }
 
-.contents_service img{
-    
+.contents_service img {
+
     width: 40px;
     margin: 20px;
-    border:none;
+    border: none;
 
 }
 
@@ -358,13 +372,13 @@ div img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.mifoto img{ 
+.mifoto img {
     width: 70%;
     border-radius: 50%;
- 
+
 }
 
 footer {
@@ -409,22 +423,23 @@ footer {
     .layout_gallary {
 
         grid-template-columns: repeat(3, 1fr);
+        width: 100%;
 
     }
 
-    #service{
-        margin-top:0 ;
+    #service {
+        margin-top: 0;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: start;
         padding: 3% 5%;
-      
+
     }
 
     .layout_service {
         width: 87%;
-    
+
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -433,14 +448,14 @@ footer {
         place-items: center;
     }
 
-    .contents_service{
+    .contents_service {
         width: 100%;
         padding: 30px;
-    
+
         display: flex;
         flex-direction: column;
         align-items: start;
-    
+
         border: #ddd 1px solid;
         border-radius: 10px;
     }
@@ -451,69 +466,69 @@ footer {
         flex-direction: row;
         justify-content: start;
         align-items: center;
-    
+
         width: 100%;
-    
+
         padding: 5%;
-    
-        
-    
+
+
+
     }
 
-    
-.miventaja {
+
+    .miventaja {
 
 
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 50%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
 
-}
+    }
 
-.icons {
-    display: flex;
-    gap: 10px;
-    margin: 30px 0;
+    .icons {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0;
 
-}
-
-
-.icons img {
-    width: 36px;
-    height: 36px;
-
-}
+    }
 
 
-.skills {
-    margin: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    .icons img {
+        width: 36px;
+        height: 36px;
 
-}
+    }
 
-.skills img {
-    width: 36px;
-    height: 36px;
 
-}
+    .skills {
+        margin: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
 
-.mifoto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+    }
 
-.mifoto img{ 
-    width: 70%;
-    border-radius: 50%;
- 
-}
+    .skills img {
+        width: 36px;
+        height: 36px;
+
+    }
+
+    .mifoto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mifoto img {
+        width: 70%;
+        border-radius: 50%;
+
+    }
 
 }
 
@@ -526,11 +541,11 @@ footer {
         grid: "gallary" 1fr;
         display: flex;
         justify-content: center;
-        border:solid 1px #ddd;
-     
-        
-    
-    
+        border: solid 1px #ddd;
+
+
+
+
     }
 
     .layout_gallary {
@@ -540,39 +555,40 @@ footer {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto;
         gap: 2rem;
+        width: 100%;
     }
-    
 
-    #service{
-        margin-top:0 ;
+
+    #service {
+        margin-top: 0;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: start;
         padding: 3% 5%;
-      
+
     }
 
     .layout_service {
         width: 87%;
-    
+
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         gap: 2rem;
-    
+
         align-items: start;
         place-items: center;
     }
 
-    .contents_service{
+    .contents_service {
         width: 100%;
         padding: 30px;
-    
+
         display: flex;
         flex-direction: column;
         align-items: start;
-    
+
         border: #ddd 1px solid;
         border-radius: 10px;
     }
@@ -583,71 +599,71 @@ footer {
         flex-direction: row;
         justify-content: start;
         align-items: center;
-    
+
         width: 100%;
-    
+
         padding: 5%;
-    
-        
-    
+
+
+
     }
 
-    
-.miventaja {
+
+    .miventaja {
 
 
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 50%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
 
-}
+    }
 
-.icons {
-    display: flex;
-    gap: 10px;
-    margin: 30px 0;
+    .icons {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0;
 
-}
-
-
-.icons img {
-    width: 36px;
-    height: 36px;
-
-}
+    }
 
 
-.skills {
-    margin: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    .icons img {
+        width: 36px;
+        height: 36px;
 
-}
+    }
 
-.skills img {
-    width: 36px;
-    height: 36px;
 
-}
+    .skills {
+        margin: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
 
-.mifoto {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    }
 
-    
-}
+    .skills img {
+        width: 36px;
+        height: 36px;
 
-.mifoto img{ 
-    width: 50%;
-    border-radius: 50%;
- 
-}
-    
+    }
+
+    .mifoto {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .mifoto img {
+        width: 50%;
+        border-radius: 50%;
+
+    }
+
 
 }
