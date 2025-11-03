@@ -16,13 +16,14 @@ body {
 
 
 header {
-    padding: 20Px 5%;
+    padding: 20px 5%;
     display: flex;
     flex-direction: row;
     width: 100vw;
     height: 150px;
     justify-content: space-between;
     align-items: center;
+
 }
 
 
@@ -224,10 +225,11 @@ h4 {
 #gallary {
 
     width: 100%;
-    padding: 5%;
+    padding: 6% 5%;
     grid: "gallary" 1fr;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-top: solid 1px #ddd;
     border-bottom: solid 1px #ddd;
 
@@ -241,7 +243,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
-    gap: 2rem;
+    gap: 1.7rem;
     width: 80%;
 }
 
@@ -279,7 +281,7 @@ div img:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
-    gap: 2rem;
+    gap: 1.7rem;
 
     place-items: center;
     align-items: start;
@@ -386,16 +388,18 @@ div img:hover {
 footer {
     background-color: #000;
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: center;
     border: solid 1px #000;
     padding: 2% 5% 0 5%;
+    margin-top: 40px;
 }
 
 .copy {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 30px;
     font-size: 10px;
     color: #fff;
@@ -404,7 +408,7 @@ footer {
 .back-to-top {
     position: fixed;
     right: 20px;
-    bottom: 24px;
+    bottom: 45px;
     width: 42px;
     height: 42px;
     border-radius: 50%;
