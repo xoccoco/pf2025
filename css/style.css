@@ -228,7 +228,8 @@ h4 {
     grid: "gallary" 1fr;
     display: flex;
     justify-content: center;
-    border: solid 1px #ddd;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
 
 
 }
@@ -377,7 +378,7 @@ div img:hover {
 
 .mifoto img {
     width: 80%;
-  border: none;
+    border: none;
 
 }
 
@@ -401,41 +402,41 @@ footer {
 }
 
 .back-to-top {
-  position: fixed;
-  right: 20px;
-  bottom: 24px;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 24px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
 
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 500;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 500;
 
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity .25s ease, transform .25s ease;
-  visibility: hidden;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity .25s ease, transform .25s ease;
+    visibility: hidden;
 }
 
 .back-to-top.show {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
 
 .back-to-top img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .back-to-top:focus {
-  outline: 1px solid rgba(0, 0, 0, .1);
-  outline-offset: 3px;
+    outline: 1px solid rgba(0, 0, 0, .1);
+    outline-offset: 3px;
 }
 
 
@@ -565,7 +566,7 @@ footer {
 
     .mifoto img {
         width: 50%;
-   
+
 
     }
 
@@ -573,39 +574,40 @@ footer {
 
 @media (min-width: 1200px) {
 
-h1 {
-    font-family: "roboto b";
-    font-size: 2rem;
+    h1 {
+        font-family: "roboto b";
+        font-size: 2rem;
 
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 0px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 0px;
 
 
-}
+    }
 
-h2 {
-    font-family: "funnel r";
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: #333;
-    margin-bottom: 10px;
+    h2 {
+        font-family: "funnel r";
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #333;
+        margin-bottom: 10px;
 
-}
+    }
 
-h3 {
-    font-family: "poppins L";
-    font-size: 5rem;
-    font-weight: 600;
-    color: #000;
-    margin: 20px 0;
-}
+    h3 {
+        font-family: "poppins L";
+        font-size: 5rem;
+        font-weight: 600;
+        color: #000;
+        margin: 20px 0;
+    }
 
-h4 {
-    font-family: "roboto l";
-    font-size: 22px;
-    color: #000;
-}
+    h4 {
+        font-family: "roboto l";
+        font-size: 22px;
+        color: #000;
+    }
+
     #gallary {
 
         width: 100%;
@@ -691,7 +693,7 @@ h4 {
 
     }
 
-    .omoi{
+    .omoi {
         text-align: right;
         color: #333;
 
@@ -738,7 +740,7 @@ h4 {
 
     .mifoto img {
         width: 40%;
-        
+
     }
 
 
