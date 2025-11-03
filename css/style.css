@@ -615,10 +615,8 @@ footer {
         grid: "gallary" 1fr;
         display: flex;
         justify-content: center;
-        border: solid 1px #ddd;
-
-
-
+        border-top: solid 1px #ddd;
+        border-bottom: solid 1px #ddd;
 
     }
 
