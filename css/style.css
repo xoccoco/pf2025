@@ -320,7 +320,7 @@ div img:hover {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    border: #ddd 1px solid;
+    border-top: #ddd 1px solid;
 
     width: 100%;
 
@@ -354,7 +354,7 @@ div img:hover {
 
 
 .skills {
-    margin: 40px 0;
+    margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -381,6 +381,7 @@ div img:hover {
 
 }
 
+
 footer {
     background-color: #000;
     width: 100%;
@@ -398,6 +399,7 @@ footer {
     font-size: 10px;
     color: #fff;
 }
+
 
 
 
@@ -638,7 +640,6 @@ h4 {
         padding: 5%;
 
 
-
     }
 
 
@@ -655,6 +656,8 @@ h4 {
 
     .omoi{
         text-align: right;
+        color: #333;
+
     }
 
     .icons {

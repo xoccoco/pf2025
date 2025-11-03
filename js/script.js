@@ -22,4 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.setAttribute('aria-hidden', true);
       }
     });
+
+      // スクロールした時に自動で閉じる処理
+  window.addEventListener('scroll', () => {
+    if (nav.classList.contains('active')) {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+      nav.setAttribute('aria-hidden', true);
+    }
   });
+
+  
+  });
+
+  
